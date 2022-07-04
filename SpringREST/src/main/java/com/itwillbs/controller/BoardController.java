@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class MemberController {
+public class BoardController {
 	
-	private static final Logger log = LoggerFactory.getLogger(MemberController.class);
+	private static final Logger log = LoggerFactory.getLogger(BoardController.class);
 	
 	// http://localhost:8088/controller/create
 	@RequestMapping(value = "/create", method = RequestMethod.GET)
