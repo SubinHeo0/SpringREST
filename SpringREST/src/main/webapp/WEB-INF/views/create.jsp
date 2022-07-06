@@ -42,6 +42,11 @@
 				contentType : "application/json",
 				success:function(){
 					alert(' 정보 전달 완료! ');
+					console.log(data);
+					if(data == 'addOK'){
+						alert('글쓰기 완료!');
+						location.href='/controller/all';
+					}
 				}
 			});
 			

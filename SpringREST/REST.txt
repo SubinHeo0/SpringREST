@@ -56,6 +56,27 @@ REST(Representational State Teansfer) : 서버와 통신하는 방법
    
    
    
+   * REST 컨트롤러에서의 HTTP메서드 의미
+   
+    POST - 추가 (Create)
+    GET - 조회 (Select/read)
+    PUT - 수정(전체) (Update) / PATHCH (일부수정)
+    DELETE - 삭제 (Delete)
+     
+   * REST 방식 주소구현 형태
+   [ /작업명/기본키 + 메서드 + 데이터 ]
+   
+   작업명 : 요청하는 작업의 종류 (members/boards/goods....)
+   기본키 : 요청 작업에 해당하는 대상의 기본키
+   데이터 : 기능수행에 필요한 JSON데이터
+   
+   
+   ex)  URI : /boards + 데이터  (POST)  : 글쓰기
+   ex)  URI : /boards		    (GET)  : 전체 글정보 조회
+   ex)  URI : /boards/100	    (GET)  : 100번 글정보 조회
+   ex)  URI : /boards/100	    (DELETE)  : 100번 글정보 삭제
+   ex)  URI : /boards/100 +데이터   (PUT)  : 100번 글정보 수정
+   
    
    
    
